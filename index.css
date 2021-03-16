@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Quicksand',
+        sans-serif;
+}
+
+video {
+    position: relative;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    z-index: -10;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    float: left;
+    width: 90px;
+    margin: 15px;
+    margin-left: 80px;
+    font-size: 1.3rem;
+}
+
+#logo {
+    z-index: 1000;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+/* slider */
+
+#slider {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
+    ;
+}
+
+.slide {
+    width: 100%;
+    display: block;
+    animation-name: fade;
+    animation-duration: 1s;
+    height: 700px;
+}
+
+.sliderImg {
+    width: 100%;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    padding: 15px 10px;
+    border-radius: 5px;
+    color: whitesmoke;
+
+}
+
+.controls:hover {
+    background: grey;
+    transition: 0.3s;
+}
+
+.controls:active {
+    color: grey;
+}
+
+#left-arrow {
+    left: 10px;
+}
+
+#right-arrow {
+    right: 10px;
+}
+
+#dots-con {
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    background: grey;
+    padding: 8px;
+    border-radius: 50%;
+    margin: 10px 5px;
+}
+
+.active {
+    background: black;
+}
+
+@media (max-width:576px) {
+    #slider {
+        width: 100%;
+
+    }
+
+    .controls {
+        font-size: 1em;
+    }
+
+    #dots-con {
+        display: none;
+    }
+}
