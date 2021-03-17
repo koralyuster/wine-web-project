@@ -27,7 +27,7 @@ nav ul {
 nav ul li {
     float: left;
     width: 90px;
-    margin: 15px;
+    margin: 20px;
     margin-left: 80px;
     font-size: 1.3rem;
 }
@@ -107,14 +107,14 @@ nav ul li {
 
 .dot {
     display: inline-block;
-    background: grey;
+    background: rgba(255, 255, 255, 0.662);
     padding: 8px;
     border-radius: 50%;
     margin: 10px 5px;
 }
 
 .active {
-    background: black;
+    background: rgba(90, 90, 90, 0.856);
 }
 
 @media (max-width:576px) {
@@ -130,4 +130,87 @@ nav ul li {
     #dots-con {
         display: none;
     }
+}
+
+/* boxText - on slider */
+
+.sliderTitle {
+    color: #fff;
+    position: relative;
+    top: -500px;
+    left: 1120px;
+    text-decoration: underline;
+}
+
+.silerText {
+    color: #fff;
+    width: 830px;
+    text-align: center;
+    position: relative;
+    top: -470px;
+    left: 780px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* Wine Club */
+
+.boxIcon {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(228, 224, 224);
+}
+
+.boxIcon h1 {
+    text-align: center;
+    padding: 50px;
+}
+
+.boxIcon p {
+    text-align: center;
+    width: 850px;
+    line-height: 1.6;
+    position: relative;
+    left: 750px;
+}
+
+.boxIcon .icons {
+    /* background-color: #fff; */
+    display: grid;
+    grid-template: 100px / auto auto auto;
+    text-align: center;
+    font-size: 70px;
+    line-height: 3;
+}
+
+.boxIcon .icons #present {
+    color: brown;
+}
+
+.boxIcon .icons #delivery {
+    color: brown;
+}
+
+.boxIcon .icons #wine {
+    color: brown;
+}
+
+.boxIcon .textIcons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    line-height: 10;
+}
+
+.btnClub {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+    border-radius: 100px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    font-size: 1.1rem;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.32);
 }
