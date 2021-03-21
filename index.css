@@ -42,103 +42,53 @@ nav ul li {
 
 /* slider */
 
-#slider {
-    width: 100%;
-    margin: 0 auto;
+/* Slideshow container */
+.slideshow-container {
     position: relative;
-    overflow: hidden;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.4);
-    ;
-}
-
-.slide {
-    width: 100%;
-    display: block;
-    animation-name: fade;
-    animation-duration: 1s;
-    height: 700px;
 }
 
 .sliderImg {
-    width: 100%;
+    margin: 7px auto;
+    vertical-align: middle;
+    height: 1200px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade {
     from {
-        opacity: 0.5;
+        opacity: .6
     }
 
     to {
-        opacity: 1;
+        opacity: 1
     }
 }
-
-.controls {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.5em;
-    padding: 15px 10px;
-    border-radius: 5px;
-    color: whitesmoke;
-
-}
-
-.controls:hover {
-    background: grey;
-    transition: 0.3s;
-}
-
-.controls:active {
-    color: grey;
-}
-
-#left-arrow {
-    left: 10px;
-}
-
-#right-arrow {
-    right: 10px;
-}
-
-#dots-con {
-    text-align: center;
-}
-
-.dot {
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.662);
-    padding: 8px;
-    border-radius: 50%;
-    margin: 10px 5px;
-}
-
-.active {
-    background: rgba(90, 90, 90, 0.856);
-}
-
-@media (max-width:576px) {
-    #slider {
-        width: 100%;
-
-    }
-
-    .controls {
-        font-size: 1em;
-    }
-
-    #dots-con {
-        display: none;
-    }
-}
-
-/* boxText - on slider */
 
 .sliderTitle {
     color: #fff;
     position: relative;
-    top: -500px;
-    left: 1120px;
+    top: -750px;
+    text-align: center;
     text-decoration: underline;
 }
 
@@ -147,7 +97,7 @@ nav ul li {
     width: 830px;
     text-align: center;
     position: relative;
-    top: -470px;
+    top: -720px;
     left: 780px;
     line-height: 1.6;
     font-size: 1.1rem;
@@ -157,14 +107,60 @@ nav ul li {
 
 .boxIcon {
     width: 100%;
+    height: 650px;
+}
+
+.boxIcon .bgcImg {
+    z-index: -1;
+    width: 50%;
     height: 630px;
-    background-color: rgb(228, 224, 224);
+    opacity: 0.1;
+    position: relative;
+    top: -600px;
+    display: flex;
+    margin: 0 auto;
 }
 
 .boxIcon h1 {
     text-align: center;
-    padding: 50px;
-    text-decoration: underline;
+    padding: 10px;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    position: relative;
+    color: rgb(0, 0, 0);
+}
+
+a:after,
+a:visited:after {
+    content: '';
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    background: rgb(0, 0, 0);
+    transition: 0.2s;
+}
+
+a:hover:after,
+a:visited:hover:after {
+    width: 100%;
+}
+
+a.block,
+a:visited.block {
+    display: block;
+    padding: 0.5em;
+}
+
+a.block:hover,
+a:visited.block:hover {
+    background: #eee;
 }
 
 .boxIcon p {
@@ -201,8 +197,8 @@ nav ul li {
     display: grid;
     grid-template-columns: 800px 800px 800px;
     text-align: center;
-    line-height: 10;
-    font-size: 1.2rem;
+    line-height: 9;
+    font-size: 1.3rem;
 }
 
 .btnClub {
@@ -210,11 +206,11 @@ nav ul li {
     margin: 0 auto;
     text-align: center;
     padding: 15px;
-    border-radius: 100px;
-    border: none;
+    border: 1px solid #000;
     outline: 0;
     cursor: pointer;
     font-size: 1.1rem;
+    background: none;
     box-shadow: inset 0 0 0 0 #a52a2a;
     transition: ease-out 0.8s;
 }
@@ -223,12 +219,124 @@ nav ul li {
     box-shadow: inset 300px 0 0 0 #a52a2a;
     cursor: pointer;
     color: #fff;
+    border: none;
 }
 
 .boxVisitor {
     width: 100%;
-    height: 800px;
+    height: 500px;
     background-image: url(images/winery.jpeg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+}
+
+.wines {
+    width: 100%;
+    display: grid;
+}
+
+.wines h2 {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px;
+    text-transform: uppercase;
+}
+
+.wines .imgs {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px 200px;
+    margin: 0 auto;
+}
+
+.contact {
+    width: 100%;
+    height: 1000px;
+    background-image: url(images/view-winery.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.546);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    width: 850px;
+    position: relative;
+    top: 250px;
+    margin: 0 auto;
+}
+
+.container .details {
+    width: 300px;
+    padding: 15px;
+}
+
+form {
+    padding: 40px 70px;
+    width: 500px;
+}
+
+.form-control {
+    position: relative;
+    border: none;
+}
+
+.form-control label {
+    color: rgb(108, 106, 106);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: none;
+    border-bottom: 1px solid rgb(172, 170, 170);
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 50%;
+    margin: 0 auto;
+    outline: none;
+    box-shadow: inset 0 0 0 0 rgb(242, 185, 63);
+    transition: ease-out 0.8s;
+}
+
+input[type="submit"]:hover {
+    box-shadow: inset 300px 0 0 0 rgb(242, 185, 63);
+    cursor: pointer;
+}
+
+.form-control.success input {
+    border-color: var(--success-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control small {
+    color: var(--error-color);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
 }

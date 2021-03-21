@@ -39,26 +39,33 @@
 
     <video src="images/production ID_3775895.mp4" muted loop autoplay></video>
 
-    <img src="images/logo.png" id="logo" alt="">
+    <img src="images/logo.png" id="logo" alt="logo">
 
     <!-- slider -->
 
-    <div id="slider">
+    <div class="slideshow-container">
 
-        <div class="slide">
-            <img src="images/sliderimg1.jpeg" class="sliderImg" alt="">
+        <div class="mySlides fade">
+            <img src="images/sliderimg1.jpeg" class="sliderImg" style="width:100%">
         </div>
 
-        <div class="slide">
-            <img src="images/sliderimg2.jpeg" class="sliderImg" alt="">
+        <div class="mySlides fade">
+            <img src="images/sliderimg2.jpeg" class="sliderImg" style="width:100%">
         </div>
 
-        <div class="slide">
-            <img src="images/sliderimg3.jpeg" class="sliderImg" class="sliderImg" alt="">
+        <div class="mySlides fade">
+            <img src="images/sliderimg3.jpeg" class="sliderImg" style="width:100%">
         </div>
 
-        <div class="slide">
-            <img src="images/sliderimg4.jpeg" class="sliderImg" alt="">
+        <div class="mySlides fade">
+            <img src="images/sliderimg4.jpeg" class="sliderImg" style="width:100%">
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
         </div>
 
         <h1 class="sliderTitle">Our Wine</h1>
@@ -69,23 +76,13 @@
             natus corrupti vel. Odio ullam magni ipsum, dicta quam illo sunt. Dolorem nobis fugiat maiores impedit,
             recusandae quae nisi. Doloremque esse placeat minima doloribus velit tempora culpa.</p>
 
-        <!-- controlling arrow -->
-        <span class="controls" onclick="prevSlide(-1)" id="left=arrow"><i class="fas fa-chevron-left"
-                aria-hidden="true"></i></span>
-        <span class="controls" id="right-arrow" onclick="nextSlide(1)"><i class="fas fa-chevron-right"
-                aria-hidden="true"></i></span>
-
-        <div id="dots-con">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
     </div>
 
 
+    <!-- icons  -->
+
     <div class="boxIcon">
-        <h1>1985 WINE CLUB</h1>
+        <h1><a href="#">1985 WINE CLUB</a></h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium itaque magni error quisquam tenetur
             optio dolore alias iste harum? Inventore quisquam tenetur tempora, sapiente vero consequatur. Pariatur
             voluptates similique autem suscipit eaque, quaerat dicta ducimus architecto. Laborum non unde hic reiciendis
@@ -104,15 +101,80 @@
         </div>
 
         <button class="btnClub">Join The Club</button>
+
+        <img src="images/products.png" class="bgcImg" alt="">
     </div>
 
 
     <div class="boxVisitor">
-
     </div>
 
+    <div class="wines">
+        <h2>Our Wine</h2>
+        <div class="imgs">
+            <img src="images/bottle3.png" alt="">
+            <img src="images/bottle1.png" alt="">
+            <img src="images/bottle2.png" alt="">
+            <img src="images/bottle4.png" alt="">
+            <img src="images/bottle5.png" alt="">
+            <img src="images/bottle6.png" alt="">
+        </div>
+    </div>
 
-    <script src="main.js"></script>
+    <br>
+    <br>
+    <br>
+
+    <div class="contact">
+
+        <div class="container">
+
+            <div class="details">
+                <h3>Lorem</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam officiis sunt earum qui dicta
+                    beatae
+                    fuga adipisci rerum. Magnam delectus architecto qui soluta ipsum ad fugit est officiis odio ipsa?
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, eveniet.
+                </p>
+            </div>
+
+            <form action="">
+                <div class="form-control">
+                    <label for=""></label>
+                    <input type="text" id="firstName" placeholder="Your First Name">
+                    <small>Error Message</small>
+                </div>
+                <br>
+                <div class="form-control">
+                    <label for=""></label>
+                    <input type="text" id="lastName" placeholder="Your Last Name">
+                    <small>Error Message</small>
+                </div>
+                <br>
+                <div class="form-control">
+                    <label for=""></label>
+                    <input type="email" id="email" placeholder="Your Email">
+                    <small>Error Message</small>
+                </div>
+                <br>
+                <div class="form-control">
+                    <label for=""></label>
+                    <input type="text" id="message" placeholder="Message">
+                    <small>Error Message</small>
+                </div>
+                <br>
+                <input type="submit" value="Send">
+            </form>
+
+        </div>
+
+        <footer>
+        </footer>
+
+
+        <script src="main.js"></script>
+
 </body>
 
 </html>
