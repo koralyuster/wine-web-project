@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <link rel="stylesheet" href="index.css">
 
     <title>Wine</title>
@@ -28,152 +30,209 @@
 
 <body>
 
-    <nav>
+    <section id="section-1"></section>
+    <nav class="sticky">
         <ul>
-            <li><a href="#"></a>Home</li>
-            <li><a href="#"></a>Our Wine</li>
-            <li><a href="#"></a>Visit Us</li>
-            <li><a href="#"></a>Contact</li>
+            <li><a href="#section-1">Home</a></li>
+            <li><a href="#section-2">Our Story</a></li>
+            <li><a href="#section-3">Visit Us</a></li>
+            <li><a href="#section-4">Wines</a></li>
+            <li><a href="#section-5">Contact</a></li>
         </ul>
     </nav>
 
     <video src="images/production ID_3775895.mp4" muted loop autoplay></video>
-
     <img src="images/logo.png" id="logo" alt="logo">
+    </section>
 
     <!-- slider -->
 
-    <div class="slideshow-container">
+    <section id="section-2">
+        <div class="slideshow-container">
 
-        <div class="mySlides fade">
-            <img src="images/sliderimg1.jpeg" class="sliderImg" style="width:100%">
+            <div class="mySlides fade">
+                <img src="images/sliderimg1.jpeg" class="sliderImg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/sliderimg2.jpeg" class="sliderImg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/sliderimg3.jpeg" class="sliderImg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/sliderimg4.jpeg" class="sliderImg" style="width:100%">
+            </div>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <h1 class="sliderTitle">Our Wine</h1>
+            <p class="silerText"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore iusto
+                sequi!
+                Ipsam iste sunt cum
+                aliquid consectetur nesciunt molestias numquam expedita odit exercitationem culpa quae quidem illum
+                atque
+                non fugiat architecto recusandae nulla, iure, molestiae quod. Quos consequuntur fugit, illo tempore
+                quisquam
+                natus corrupti vel. Odio ullam magni ipsum, dicta quam illo sunt. Dolorem nobis fugiat maiores impedit,
+                recusandae quae nisi. Doloremque esse placeat minima doloribus velit tempora culpa.</p>
+
         </div>
-
-        <div class="mySlides fade">
-            <img src="images/sliderimg2.jpeg" class="sliderImg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-            <img src="images/sliderimg3.jpeg" class="sliderImg" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-            <img src="images/sliderimg4.jpeg" class="sliderImg" style="width:100%">
-        </div>
-
-        <div style="text-align:center">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-
-        <h1 class="sliderTitle">Our Wine</h1>
-        <p class="silerText"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore iusto sequi!
-            Ipsam iste sunt cum
-            aliquid consectetur nesciunt molestias numquam expedita odit exercitationem culpa quae quidem illum atque
-            non fugiat architecto recusandae nulla, iure, molestiae quod. Quos consequuntur fugit, illo tempore quisquam
-            natus corrupti vel. Odio ullam magni ipsum, dicta quam illo sunt. Dolorem nobis fugiat maiores impedit,
-            recusandae quae nisi. Doloremque esse placeat minima doloribus velit tempora culpa.</p>
-
-    </div>
+    </section>
 
 
     <!-- icons  -->
 
-    <div class="boxIcon">
-        <h1><a href="#">1985 WINE CLUB</a></h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium itaque magni error quisquam tenetur
-            optio dolore alias iste harum? Inventore quisquam tenetur tempora, sapiente vero consequatur. Pariatur
-            voluptates similique autem suscipit eaque, quaerat dicta ducimus architecto. Laborum non unde hic reiciendis
-            libero at sequi magnam ratione nemo? Eligendi, ipsam rerum assumenda odit quo nobis porro perferendis fuga
-            fugit quibusdam, culpa tempora officiis saepe nesciunt laudantium, eos ea. Ducimus, eaque iste.</p>
-        <div class="icons">
-            <div id="present"><i class="fas fa-percent"></i></div>
-            <div id="delivery"><i class="fas fa-truck-loading"></i></div>
-            <div id="wine"><i class="fas fa-wine-glass-alt"></i></div>
-        </div>
-
-        <div class="textIcons">
-            <div id="presentText">20% off wine purchases</div>
-            <div id="deliveyText">Free delivery</div>
-            <div id="wineText">Exclusice wines</div>
-        </div>
-
-        <button class="btnClub">Join The Club</button>
-
-        <img src="images/products.png" class="bgcImg" alt="">
-    </div>
-
-
-    <div class="boxVisitor">
-    </div>
-
-    <div class="wines">
-        <h2>Our Wine</h2>
-        <div class="imgs">
-            <img src="images/bottle3.png" alt="">
-            <img src="images/bottle1.png" alt="">
-            <img src="images/bottle2.png" alt="">
-            <img src="images/bottle4.png" alt="">
-            <img src="images/bottle5.png" alt="">
-            <img src="images/bottle6.png" alt="">
-        </div>
-    </div>
-
-    <br>
-    <br>
-    <br>
-
-    <div class="contact">
-
-        <div class="container">
-
-            <div class="details">
-                <h3>Lorem</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam officiis sunt earum qui dicta
-                    beatae
-                    fuga adipisci rerum. Magnam delectus architecto qui soluta ipsum ad fugit est officiis odio ipsa?
-                    <br><br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, eveniet.
-                </p>
+    <section id="section-3">
+        <div class="boxIcon">
+            <h1><a href="#">1985 WINE CLUB</a></h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium itaque magni error quisquam tenetur
+                optio dolore alias iste harum? Inventore quisquam tenetur tempora, sapiente vero consequatur. Pariatur
+                voluptates similique autem suscipit eaque, quaerat dicta ducimus architecto. Laborum non unde hic
+                reiciendis
+                libero at sequi magnam ratione nemo? Eligendi, ipsam rerum assumenda odit quo nobis porro perferendis
+                fuga
+                fugit quibusdam, culpa tempora officiis saepe nesciunt laudantium, eos ea. Ducimus, eaque iste.</p>
+            <div class="icons">
+                <div id="present"><i class="fas fa-percent"></i></div>
+                <div id="delivery"><i class="fas fa-truck-loading"></i></div>
+                <div id="wine"><i class="fas fa-wine-glass-alt"></i></div>
             </div>
 
-            <form action="">
-                <div class="form-control">
-                    <label for=""></label>
-                    <input type="text" id="firstName" placeholder="Your First Name">
-                    <small>Error Message</small>
-                </div>
-                <br>
-                <div class="form-control">
-                    <label for=""></label>
-                    <input type="text" id="lastName" placeholder="Your Last Name">
-                    <small>Error Message</small>
-                </div>
-                <br>
-                <div class="form-control">
-                    <label for=""></label>
-                    <input type="email" id="email" placeholder="Your Email">
-                    <small>Error Message</small>
-                </div>
-                <br>
-                <div class="form-control">
-                    <label for=""></label>
-                    <input type="text" id="message" placeholder="Message">
-                    <small>Error Message</small>
-                </div>
-                <br>
-                <input type="submit" value="Send">
-            </form>
+            <div class="textIcons">
+                <div id="presentText">20% off wine purchases</div>
+                <div id="deliveyText">Free delivery</div>
+                <div id="wineText">Exclusice wines</div>
+            </div>
 
+            <button class="btnClub">Join The Club</button>
+
+            <img src="images/products.png" class="bgcImg" alt="">
+        </div>
+    </section>
+
+    <section id="section-4">
+        <div class="boxVisitor">
         </div>
 
+        <div class="wines">
+            <h2>Our Wine</h2>
+            <div class="imgs">
+
+                <img src="images/bottle3.png" id="bottle-1" alt="">
+                <!-- <div class="custom-model-main">
+                    <div class="custom-model-inner">
+                        <div class="close-btn">×</div>
+                        <div class="custom-model-wrap">
+                            <div class="pop-up-content-wrap">
+                                bottle 1
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-overlay"></div>
+                </div> -->
+                <div id="popupWrapper">
+                    <!--תפקידו של הראפר לעשות חלון אפור שקוף שנפתח-->
+                    <div id="popup">
+                        <!--המעטפת של החלון-->
+                        <div id="popupClose">X</div>
+                        <!--נקודת סגירה על החלון-->
+                        <div id="popupContent"></div>
+                        <h2>Title1</h2>
+                        <p>demo text1</p>
+                    </div>
+                </div>
+
+                <img src="images/bottle1.png" id="bottle-2" alt="">
+                <div id="popupWrapper">
+                    <!--תפקידו של הראפר לעשות חלון אפור שקוף שנפתח-->
+                    <div id="popup">
+                        <!--המעטפת של החלון-->
+                        <div id="popupClose">X</div>
+                        <!--נקודת סגירה על החלון-->
+                        <div id="popupContent"></div>
+                        <h2>Title 2</h2>
+                        <p>demo text 2</p>
+                    </div>
+                </div>
+
+                <img src="images/bottle2.png" alt="">
+                <img src="images/bottle4.png" alt="">
+                <img src="images/bottle5.png" alt="">
+                <img src="images/bottle6.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <section id="section-5">
+        <section class="contact">
+
+            <div class="container">
+
+                <div class="details">
+                    <h3>Lorem</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam officiis sunt earum qui dicta
+                        beatae
+                        fuga adipisci rerum. Magnam delectus architecto qui soluta ipsum ad fugit est officiis odio
+                        ipsa?
+                        <br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, eveniet.
+                    </p>
+                </div>
+
+                <form action="">
+                    <div class="form-control">
+                        <label for=""></label>
+                        <input type="text" id="firstName" placeholder="Your First Name">
+                        <small>Error Message</small>
+                    </div>
+                    <br>
+                    <div class="form-control">
+                        <label for=""></label>
+                        <input type="text" id="lastName" placeholder="Your Last Name">
+                        <small>Error Message</small>
+                    </div>
+                    <br>
+                    <div class="form-control">
+                        <label for=""></label>
+                        <input type="email" id="email" placeholder="Your Email">
+                        <small>Error Message</small>
+                    </div>
+                    <br>
+                    <div class="form-control">
+                        <label for=""></label>
+                        <input type="text" id="message" placeholder="Message">
+                        <small>Error Message</small>
+                    </div>
+                    <br>
+                    <input type="submit" value="Send">
+                </form>
+
+            </div>
+        </section>
+
         <footer>
+            <nav class="socialmediaicons"></nav>
+            <p class="footerText">Develop by Koral Yuster</p>
         </footer>
 
 
-        <script src="main.js"></script>
+        <script src="slider.js"></script>
+        <script src="mediaIcons.js"></script>
+        <script src="form.js"></script>
+        <script src="popup.js"></script>
 
 </body>
 
