@@ -41,12 +41,28 @@ nav ul li {
     font-size: 1.3rem;
 }
 
+@media screen and (max-width: 767px) {
+    nav ul li {
+        width: 80px;
+        margin: 20px;
+        margin-left: 40px;
+        font-size: 1rem;
+    }
+}
+
 #logo {
     z-index: 1000;
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%)
+}
+
+@media screen and (max-width: 767px) {
+    #logo {
+        width: 120px;
+        top: 40%;
+    }
 }
 
 /* slider */
@@ -101,6 +117,12 @@ nav ul li {
     text-decoration: underline;
 }
 
+/* @media screen and (max-width: 767px) {
+    .sliderTitle {
+        top: -10px;
+    }
+} */
+
 .silerText {
     color: #fff;
     width: 830px;
@@ -110,6 +132,14 @@ nav ul li {
     left: 780px;
     line-height: 1.6;
     font-size: 1.1rem;
+}
+
+@media screen and (max-width: 767px) {
+    .silerText {
+        left: 100px;
+        width: 520px;
+        font-size: 1rem;
+    }
 }
 
 /* Wine Club */
@@ -135,6 +165,32 @@ nav ul li {
     padding: 10px;
     text-transform: uppercase;
     /* text-decoration: underline; */
+}
+
+.pClub {
+    width: 830px;
+    text-align: center;
+    position: relative;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 767px) {
+    .boxIcon .pClub {
+        left: 100px;
+        width: 520px;
+        font-size: 1rem;
+    }
+}
+
+.boxIcon .bgcImg {
+    width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+    .boxIcon .bgcImg {
+        width: 90%;
+    }
 }
 
 a,
@@ -201,6 +257,13 @@ a:visited.block:hover {
     color: #a52a2a;
 }
 
+@media screen and (max-width: 767px) {
+    .boxIcon .icons {
+        font-size: 4rem;
+        line-height: 4;
+    }
+}
+
 
 .boxIcon .textIcons {
     display: grid;
@@ -208,6 +271,15 @@ a:visited.block:hover {
     text-align: center;
     line-height: 9;
     font-size: 1.3rem;
+}
+
+@media screen and (max-width: 767px) {
+    .boxIcon .textIcons {
+        grid-template-columns: 240px 240px 240px;
+        text-align: center;
+        line-height: 12;
+        font-size: 1rem;
+    }
 }
 
 .btnClub {
@@ -223,6 +295,14 @@ a:visited.block:hover {
     box-shadow: inset 0 0 0 0 #a52a2a;
     transition: ease-out 0.8s;
 }
+
+@media screen and (max-width: 767px) {
+    .boxIcon .btnClub {
+        position: relative;
+        left: 6px;
+    }
+}
+
 
 .btnClub:hover {
     box-shadow: inset 300px 0 0 0 #a52a2a;
@@ -260,6 +340,12 @@ a:visited.block:hover {
     margin: 0 auto;
 }
 
+@media screen and (max-width: 767px) {
+    .wines .imgs {
+        gap: 5px 0px;
+    }
+}
+
 .contact {
     width: 100%;
     height: 1000px;
@@ -278,10 +364,17 @@ a:visited.block:hover {
     margin: 0 auto;
 }
 
+@media screen and (max-width: 767px) {
+    .container {
+        width: 670px;
+    }
+}
+
 .container .details {
     width: 300px;
-    padding: 15px;
+    padding: 30px;
 }
+
 
 form {
     padding: 40px 70px;
@@ -389,6 +482,12 @@ footer {
     margin-left: 300px;
     padding: 0;
     list-style: none;
+}
+
+@media screen and (max-width: 767px) {
+    .socialmediaicons ul {
+        margin-left: 50px;
+    }
 }
 
 .socialmediaicons ul li {
